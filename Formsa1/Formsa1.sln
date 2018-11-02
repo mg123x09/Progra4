@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Formsa1", "Formsa1\Formsa1.csproj", "{27C20742-2F3D-4913-B571-429234D71F89}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27C20742-2F3D-4913-B571-429234D71F89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27C20742-2F3D-4913-B571-429234D71F89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27C20742-2F3D-4913-B571-429234D71F89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27C20742-2F3D-4913-B571-429234D71F89}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7519B50A-01E8-41D2-AC2F-6E10221A2D4D}
+	EndGlobalSection
+EndGlobal
