@@ -10,7 +10,15 @@ namespace Formsa1
         {
         public string RealizarOperacion (string LadoOne, string LadoTwo, string LadoThree, string elOperador)
         {
-            double LadoUno = Convert.ToDouble(LadoOne); 
+            double LadoUno = Convert.ToDouble(LadoOne);
+            double LadoDos = Convert.ToDouble(LadoThree);
+            double LadoTres = Convert.ToDouble(LadoThree);
+            Enumerado elOperadorEnumerado = ConvertirElOperadorEnumeradoEnString(elOperador);
+            double? elResultado = RealizarOperacion(LadoUno, LadoDos, LadoTres, elOperadorEnumerado);
+            string elResultadoConvertido; 
+
+            if(elResultado)
+
 
         }
     }
