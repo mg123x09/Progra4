@@ -15,11 +15,62 @@ namespace Formsa1
             double LadoTres = Convert.ToDouble(LadoThree);
             Enumerado elOperadorEnumerado = ConvertirElOperadorEnumeradoEnString(elOperador);
             double? elResultado = RealizarOperacion(LadoUno, LadoDos, LadoTres, elOperadorEnumerado);
-            string elResultadoConvertido; 
+            string elResultadoConvertido;
 
-            if(elResultado)
+            if (elResultado != null)
+            {
+                elResultadoConvertido = elResultado.ToString();
+            }else
+                elResultadoConvertido = "error";
 
+            return elResultadoConvertido;
 
+        }
+
+        private Enumerado ConvertirElOperadorEnumeradoEnString (string elOperador)
+        {
+            Enumerado elResultado;
+            switch (elOperador)
+            {
+                case "area":
+                case "areas":
+                case "are":
+                    elResultado = Enumerado.area; 
+                    break;
+                case "perimetro":
+                case "peri":
+                    elResultado = Enumerado.perimetro;
+                    break;
+                default:
+                    elResultado = Enumerado.desconocido;
+                    break;
+
+            }
+            return elResultado;
+        }
+
+        private double? RealizarOperacion (double LadoOne, double LadoTwo, double LadoThree, Enumerado elOperador)
+        {
+            double? elResultado = 0.0; 
+            switch (elOperador)
+            {
+                case Enumerado.area:
+                    {
+                        elResultado = (LadoOne*LadoOne);
+                        break;
+                    }
+                case Enumerado.perimetro:
+                    {
+                        elResultado = (LadoOne + LadoOne + LadoOne + LadoOne);
+                        break; 
+                    }
+                case Enumerado.desconocido:
+                    {
+                        elResultado = null;
+                        break; 
+                    }
+            }
+            return elResultado;
         }
     }
 }

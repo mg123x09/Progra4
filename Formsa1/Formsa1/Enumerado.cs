@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Formsa1
 {
-    class Enumerado
+    public enum Enumerado
     {
+         area = 2,
+            perimetro = 4,
+            desconocido= 3
+        
     }
 }
