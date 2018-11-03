@@ -56,12 +56,12 @@ namespace Formsa1
             {
                 case Enumerado.area:
                     {
-                        elResultado = (LadoOne*LadoOne);
+                        elResultado = (LadoOne*LadoTwo);
                         break;
                     }
                 case Enumerado.perimetro:
                     {
-                        elResultado = (LadoOne + LadoOne + LadoOne + LadoOne);
+                        elResultado = (LadoOne + LadoOne + LadoTwo + LadoThree);
                         break; 
                     }
                 case Enumerado.desconocido:
